@@ -1,0 +1,17 @@
+spring:
+  main:
+    banner-mode: "off"
+
+server:
+  port: 8080
+  servlet:
+    context-path: /parking-service
+
+#management endpoints on a separate port
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include=health
+  server:
+    port: 9001
